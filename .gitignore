@@ -1,13 +1,5 @@
-# Konfigurasi agent
-.commandcode/
-
-# Sistem operasi
 .DS_Store
 Thumbs.db
-
-# Log
 *.log
-
-# IDE
 .idea/
 .vscode/
