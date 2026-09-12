@@ -52,13 +52,13 @@ Relasi: `DimAccount` mengacu ke `DimCustomer`, sedangkan `FactTransaction` menga
 ## Alur ETL
 
 ```
-customer + city + state ─→ tMap ─→ DimCustomer
-branch ─────────────────→ DimBranch
-account ────────────────→ DimAccount
+customer + city + state → tMap → DimCustomer
+branch → DimBranch
+account → DimAccount
 
-transaction_excel ─┐
-transaction_csv ───┼─→ tMap → tUnite → tUniq → tMap + DimAccount → FactTransaction
-transaction_db ────┘
+transaction_excel 
+transaction_csv       → tMap → tUnite → tUniq → tMap + DimAccount → FactTransaction
+transaction_db 
 ```
 
 Aturan transformasi:
